@@ -18,7 +18,10 @@ export function Layout() {
                 <main className="app-main">
                  <SignedOut>
                     <Navigate to="/sign-in" replace />
-                    </SignedOut>  
+                    </SignedOut>
+                    <SignedIn>
+                    <Outlet />
+                    </SignedIn>  
                 </main>
           
        

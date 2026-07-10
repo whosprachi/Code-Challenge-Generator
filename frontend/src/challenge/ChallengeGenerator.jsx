@@ -9,7 +9,7 @@ export function ChallengeGenerator() {
     const [error, setError] = useState(null)
     const [difficulty, setDifficulty] = useState("easy")
     const [quota, setQuota] = useState(null)
-    const {makeRequest} = useApi()
+    
 
     useEffect(() => {
         fetchQuota()
